@@ -1,0 +1,65 @@
+# Root-level gitignore for the crop-price-prediction project
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# ML model artifacts (binary, large — regenerate via train_crop_models)
+ml_artifacts/
+
+# Environment files (contain secrets)
+.env
+.env.*
+!.env.example
+!backend/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Frontend build
+frontend/dist/
+frontend/dist-ssr/
+
+# Django
+db.sqlite3
+staticfiles/
+media/
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Data directory (real CSV files — keep structure, exclude data)
+data/*.csv
